@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Juego del Ahorcado</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Juego del Ahorcado</h1>
+    <p>'Versión Informática'</p>
+    <div id="muñeco">
+      <div class="parte-cuerpo cabeza"></div>
+      <div class="parte-cuerpo cuerpo"></div>
+      <div class="parte-cuerpo brazo-izq"></div>
+      <div class="parte-cuerpo brazo-der"></div>
+      <div class="parte-cuerpo pierna-izq"></div>
+      <div class="parte-cuerpo pierna-der"></div>
+    </div>
+
+    <p id="palabraSecreta">_ _ _ _</p>
+
+    <input type="text" id="inputLetra" maxlength="1" placeholder="Ingresa una letra" />
+    <button onclick="adivinarLetra()">Adivinar</button>
+
+    <p>Intentos restantes: <span id="intentos">6</span></p>
+    <p id="mensaje"></p>
+
+    <button onclick="reiniciarJuego()">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
